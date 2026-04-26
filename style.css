@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* 左側（ゲーム） */
+.game {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  border-right: 2px solid #ccc;
+}
+
+/* 右側（ランキング） */
+.ranking {
+  width: 300px;
+  padding: 20px;
+  overflow-y: auto;
+}
+h1{
+  font-size: 70px;
+}
+.name{
+  font-size: 32px;
+  margin-top: 0;
+}
+ .start {
+  background-color: #fff;
+  border: solid 2px #2f4f4f;
+  color: #2f4f4f;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 23px;
+  width: 7em;
+  height: 3em;
+  border-radius: 10px;
+}
+.start:hover {
+  color: #2f4f4f;
+  background-color: #b0e0e6;
+}
+.time{
+  font-size: 48px;
+  font-family: cursive;
+  font-family: fantasy;
+  font-family: serif;
+}
+
+.btn {
+  background-color: #ffd700;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  width: 10em;
+  height: 7em;
+  font-size: 30px;
+  outline: 1px solid;
+  outline-color: #ffd700;
+  outline-offset: 0px;
+  display: inline-block;
+  transition: .3s;
+  border-radius: 10px;
+}
+.btn:hover {
+  color: #fff;
+  animation: light .8s infinite;
+}
+@keyframes light {
+  100% { 
+    outline-color: transparent;
+    outline-offset: 20px;
+  }
+}
+
+footer{
+  background-color: #f7f7f8;
+}
+.score{
+  font-size: 32px;
+}
