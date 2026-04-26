@@ -104,7 +104,7 @@ document.getElementById("btn").onclick = () => {
 
 // 送信
 async function sendScore() {
-  await fetch("http://s1.ssnetwork.io:51520/score", {
+  await fetch("https://cpsserver.onrender.com/score", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name: name, score: count })
@@ -113,7 +113,7 @@ async function sendScore() {
 
 // ランキング取得
 async function loadRanking() {
-  const res = await fetch("http://s1.ssnetwork.io:51520/ranking");
+  const res = await fetch("https://cpsserver.onrender.com/ranking");
   const data = await res.json();
 
   const list = document.getElementById("ranking");
